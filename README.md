@@ -9,9 +9,9 @@ Just like [neofetch](https://github.com/dylanaraps/neofetch), it shows you basic
 ## Installation
 
 ```bash
+// using yarn
+yarn global add systor
+
 // using npm
 npm i -g systor
-
-// using yarn
-yarn add -g systor
 ```
