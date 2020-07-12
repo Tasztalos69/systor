@@ -2,7 +2,7 @@
   "name": "systor",
   "description": "A fast, reliable, JavaScript-based System Monitor.",
   "repository": "https://github.com/Tasztalos69/systor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "main.js",
   "license": "MIT",
