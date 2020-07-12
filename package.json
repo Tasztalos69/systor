@@ -1,0 +1,32 @@
+{
+  "name": "systor",
+  "description": "A fast, reliable, JavaScript-based System Monitor.",
+  "version": "1.0.0",
+  "main": "main.js",
+  "bin": "build/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm main.js",
+    "watch": "nodemon -r esm main.js",
+    "build": "babel --plugins @babel/plugin-transform-modules-commonjs main.js -d build",
+    "pkg": "pkg package.json --out-path dist",
+    "pack": "yarn run build && yarn run pkg"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.20",
+    "esm": "^3.2.25",
+    "systeminformation": "^4.26.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "7.0.0-bridge.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "nodemon": "^2.0.4",
+    "pkg": "^4.4.9"
+  },
+  "pkg": {
+    "assets": "node_modules/blessed/**/*"
+  }
+}
