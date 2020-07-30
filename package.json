@@ -3,13 +3,12 @@
   "description": "A fast, reliable, JavaScript-based System Monitor.",
   "repository": "https://github.com/Tasztalos69/systor",
   "version": "1.0.2",
-  "type": "commonjs",
-  "main": "main.js",
+  "main": "./lib/monitor.js",
   "license": "MIT",
+  "bin": "./bin/index.js",
   "scripts": {
-    "start": "node main.js",
-    "watch": "nodemon main.js",
-    "build": "babel main.js -d build"
+    "start": "node ./bin/index.js",
+    "watch": "nodemon main.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -19,8 +18,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  },
-  "pkg": {
-    "assets": "node_modules/blessed/**/*"
   }
 }
