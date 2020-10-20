@@ -2,7 +2,6 @@
 	<img alt="Logo" src="./.github/systor.png">
 </p>
 
-<h1 align="center">Systor</h1>
 <p align="center">A fast, reliable, JavaScript-based System Monitor.</p>
 
 Systor is a system monitor written in JS, and using [blessed](https://github.com/chjj/blessed), [blessed-contrib](https://github.com/yaronn/blessed-contrib), and [systeminformation](https://github.com/sebhildebrandt/systeminformation).
